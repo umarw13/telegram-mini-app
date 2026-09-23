@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Rewards</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      background: #f2f5f7;
+    }
+    .box {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    button {
+      padding: 14px 25px;
+      border: 0;
+      border-radius: 12px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>🎁 Umar Rewards</h1>
+    <p>Welcome to our Telegram Mini App!</p>
+    <button onclick="showMessage()">Continue</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+
+    function showMessage() {
+      document.getElementById("message").innerText =
+        "Welcome! Your Mini App is working.";
+    }
+  </script>
+
+</body>
+</html>
